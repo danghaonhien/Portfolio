@@ -1,0 +1,345 @@
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+  80% {
+    transform: translateX(1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+  80% {
+    transform: translateX(-1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+@keyframes moveInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+@keyframes fadeZoomIn {
+  0% {
+    opacity: 0.5;
+    transform: scale(0.95);
+  }
+  /* 50% {
+    opacity: 1;
+    transform: scale(0.975);
+  } */
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+.header2 {
+  height: 0vh;
+
+  /* background-size: cover; */
+  /* background-position: top; */
+  position: relative;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100%, 0 100%);
+
+  animation-name: moveInUp;
+  animation-duration: 2s;
+  /* z-index: 1; */
+  margin-top: -20rem;
+}
+
+.header__text-box {
+  position: absolute;
+  top: 20rem;
+  /* left: 70%; */
+  transform: translate(-50%, -50%);
+  text-align: left;
+  max-width: 100%;
+}
+.heading-primary2 {
+  padding: 0;
+  margin-bottom: 50rem;
+  color: #fff;
+  display: grid;
+  grid-template-columns: auto 120rem;
+}
+@media screen and (max-width: 75em) {
+  .heading-primary2 {
+    visibility: hidden;
+  }
+}
+
+/* .city {
+  grid-column: 1 / 3;
+}
+.time {
+  grid-column: 5 / 6;
+}
+@media screen and (max-width: 75em) {
+  .time {
+   visibility: hidden;
+  }
+  .city {
+   visibility: hidden;
+  }
+} */
+
+.heading-primary {
+  color: #fff;
+  text-transform: none;
+  /* backface-visibility: hidden; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  margin-bottom: 10rem;
+}
+@media screen and (max-width: 75em) {
+  .heading-primary {
+    margin-bottom: 20rem;
+    padding-left: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .header {
+    margin-top: 2rem;
+  }
+}
+.heading-primary--main {
+  display: block;
+  font-size: 8vw;
+  font-weight: 800;
+  -webkit-text-stroke: 3px rgb(56, 254, 19);
+  -webkit-text-fill-color: rgba(0, 0, 0, 0.1);
+  letter-spacing: 1rem;
+  animation-name: moveInLeft;
+  animation-duration: 2.5s;
+  animation-timing-function: ease-out;
+}
+.heading-primary--main2 {
+  display: block;
+  font-size: 8vw;
+  font-weight: 800;
+  -webkit-text-stroke: 3px white;
+  -webkit-text-fill-color: rgba(0, 0, 0, 0.1);
+  letter-spacing: 1rem;
+  animation-name: moveInLeft;
+  animation-duration: 2.5s;
+  animation-timing-function: ease-out;
+}
+
+@media screen and (max-width: 75em) {
+  .heading-primary--main {
+    font-size: 7rem;
+    margin-left: 1rem;
+    -webkit-text-stroke: 1px #38fe13;
+    -webkit-text-fill-color: rgba(0, 0, 0, 0.1);
+  }
+  .heading-primary--main2 {
+    font-size: 7rem;
+    margin-left: 1rem;
+    -webkit-text-stroke: 1px white;
+    -webkit-text-fill-color: rgba(0, 0, 0, 0.1);
+  }
+}
+.heading-primary--sub {
+  margin-top: 55rem;
+  margin-left: 25rem;
+  display: block;
+  font-size: 4vw;
+  font-weight: 600;
+  letter-spacing: 1rem;
+  /* animation: moveInRight 2.5s ease-out; */
+}
+.heading-primary--sub2 {
+  display: block;
+  margin-top: 4rem;
+  margin-left: 25rem;
+  font-size: 4vw;
+  font-weight: 600;
+  letter-spacing: 1rem;
+  /* animation: moveInRight 2.5s ease-out; */
+}
+.heading-primary--sub3 {
+  color: #38fe13;
+  margin-top: 55rem;
+  margin-left: 25.35rem;
+  display: block;
+  font-size: 4vw;
+  font-weight: 600;
+  letter-spacing: 1rem;
+  /* animation: moveInRight 2.5s ease-out; */
+}
+.heading-primary--sub4 {
+  color: #38fe13;
+  display: block;
+  margin-top: 4rem;
+  margin-left: 25.35rem;
+  font-size: 4vw;
+  font-weight: 600;
+  letter-spacing: 1rem;
+  /* animation: moveInRight 2.5s ease-out; */
+}
+
+.noTurn {
+  width: 100%;
+  height: 100%;
+  transform: rotate(90deg);
+}
+
+.sub_textbox {
+  text-align: left;
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 40em) {
+  .sub_textbox {
+    margin-top: 5rem;
+  }
+
+  .heading-primary--sub {
+    font-size: 2.5rem;
+    margin-left: 2rem;
+  }
+  .heading-primary--sub2 {
+    font-size: 2.5rem;
+    margin-bottom: 25rem;
+    margin-left: 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .heading-primary--sub3 {
+    font-size: 2.5rem;
+    margin-left: 2.25rem;
+  }
+  .heading-primary--sub4 {
+    font-size: 2.5rem;
+    margin-bottom: 25rem;
+    margin-left: 2.25rem;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 75em) {
+  .sidebar {
+    width: 100%;
+    /* height: auto; */
+    margin: 0;
+    padding: 0;
+  }
+  .sidebar a {
+    float: left;
+  }
+}
+
+/* Button */
+
+.heading-button {
+  color: #fff;
+  text-transform: none;
+  margin-top: 15rem;
+}
+.heading-button:hover {
+  transform: scale(1.125);
+  color: rgba(255, 255, 255, 0.9);
+  border-color: rgb(56, 254, 19, 0.2);
+  transition: all 0.3s ease;
+}
+.button {
+  background-color: rgba(0, 0, 0, 0.1);
+  border: solid 2px rgb(56, 254, 19);
+  width: 8rem;
+  color: white;
+  padding: 1rem 3rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.5rem;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.button a {
+  text-decoration: none;
+  color: white;
+}
+
+@media screen and (max-width: 75em) {
+  .heading-button {
+    margin-top: 65rem;
+    padding: 2rem;
+  }
+  .button {
+    width: 10rem;
+    padding: 1.5rem 5rem;
+    display: inline-block;
+    font-size: 1.75rem;
+  }
+}
+/* Pagination */
+.pagination-wrapper {
+  max-width: 100%;
+  height: 100%;
+  transform: rotate(270deg);
+  margin-left: 7.5rem;
+  margin-top: 42rem;
+  z-index: 1;
+}
+.pagination {
+  position: relative;
+  left: 40%;
+  top: 40%;
+  cursor: pointer;
+  /* white-space:normal ; */
+}
+.pagination span {
+  display: inline-block;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+.pagination span.active {
+  border: 1px solid #38fe13;
+}
+.pagination span:before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  background: #ffffff;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 75em) {
+  .pagination-wrapper {
+    margin-top: 85rem;
+    padding-right: 9rem;
+  }
+}

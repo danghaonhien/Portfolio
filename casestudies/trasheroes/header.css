@@ -1,0 +1,541 @@
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+  80% {
+    transform: translateX(1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+  80% {
+    transform: translateX(-1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+@keyframes moveInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+@keyframes fadeZoomIn {
+  0% {
+    opacity: 0.5;
+    transform: scale(0.95);
+  }
+  /* 50% {
+    opacity: 1;
+    transform: scale(0.975);
+  } */
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+/* Cover */
+
+.cover-container img {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.text-block {
+  display: grid;
+  text-align: left;
+  gap: 5rem;
+  position: absolute;
+  top: 25%;
+  left: 15%;
+  color: white;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  max-width: 60%;
+}
+.text-block article {
+  line-height: 4rem;
+  font-size: 1.5rem;
+}
+.image-slide {
+  animation-name: moveInLeft;
+  animation-duration: 2.5s;
+  animation-timing-function: ease-out;
+}
+
+@media screen and (max-width: 75em) {
+  .logo {
+    font-size: 4rem;
+  }
+  .image-slide {
+    max-width: 100%;
+    margin-top: -15rem;
+    padding: 0;
+  }
+  .text-block {
+    max-width: 70%;
+    margin-top: 10rem;
+    padding: 0;
+  }
+  .text-block h2 {
+    font-size: 1.75rem;
+  }
+  .cover-container img {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .cover-container {
+    margin-bottom: 40rem;
+  }
+}
+
+/* Codi Image */
+
+.textover img {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.textover {
+  align-items: center;
+  justify-content: center;
+}
+
+.textover figcaption {
+  letter-spacing: 1.1rem;
+  max-width: 80%;
+  margin-top: 15rem;
+  margin-left: 15%;
+  text-align: left;
+}
+
+@media screen and (max-width: 75em) {
+  .textover {
+    /* margin-top: 55rem; */
+    top: 0;
+    position: relative;
+  }
+  .textover figcaption {
+    font-size: 1.25rem;
+    margin-top: 5rem;
+  }
+  .textover h1 {
+    letter-spacing: 0;
+    font-size: 2rem;
+  }
+  .textover h2 {
+    letter-spacing: 0;
+    font-size: 1.75rem;
+  }
+  .textover h4 {
+    letter-spacing: 0;
+    font-size: 1.25rem;
+  }
+  .textover h5 {
+    letter-spacing: 0;
+    font-size: 1.5rem;
+  }
+}
+
+.fourcolumntext {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-left: 15%;
+  margin-top: 10rem;
+  max-width: 70%;
+  text-align: center;
+  column-gap: 7rem;
+}
+
+/* .fourcolumntext p {
+  margin-left: 2rem;
+} */
+
+@media screen and (max-width: 75em) {
+  .fourcolumntext {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 70%;
+    font-size: 1rem;
+    margin-top: 5rem;
+    gap: 5rem;
+    text-align: center;
+  }
+
+  /* .fourcolumntext p {
+    margin-left: -3rem;
+  } */
+  .fourcolumntextr h5 {
+    letter-spacing: 0;
+    font-size: 1.5rem;
+  }
+  .fourcolumntextr h4 {
+    letter-spacing: 0;
+    font-size: 1.25rem;
+  }
+}
+/* Concept */
+
+.concept-item4 img {
+  max-width: 20rem;
+}
+
+.turnOrange {
+  color: #ff4f0d;
+}
+@media screen and (max-width: 75em) {
+  .concept-container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Design process */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  max-width: 70%;
+  margin-left: 15%;
+  gap: 5rem;
+}
+.card {
+  background-color: rgba(0, 0, 0, 0.1);
+  max-width: 20rem;
+  min-height: 15rem;
+  text-align: left;
+  padding: 2rem;
+
+  margin-top: 10rem;
+}
+
+@media screen and (max-width: 75em) {
+  .card-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0;
+    font-size: 1.25rem;
+  }
+  .card-container h4 {
+    font-size: 1.25rem;
+  }
+  .card-container h5 {
+    font-size: 1.5rem;
+  }
+}
+
+/* empathy */
+
+.empathy {
+  text-align: left;
+  margin-left: 15%;
+  margin-top: 10rem;
+}
+
+.twocolumntext {
+  margin-top: 10rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15rem;
+  text-align: left;
+  margin-left: 15%;
+  /* grid-column-gap: 15rem; */
+}
+
+@media screen and (max-width: 75em) {
+  .twocolumntext {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 70%;
+    font-size: 1.25rem;
+    margin-top: 7rem;
+  }
+  .twocolumntext h1 {
+    font-size: 2rem;
+  }
+  .twocolumntext h4 {
+    font-size: 1.25rem;
+  }
+}
+
+/* Persona */
+.persona-text {
+  line-height: 3.8rem;
+}
+.persona-card {
+  margin-top: 2rem;
+  display: flex;
+  background-color: #ff4f0d;
+  padding: 1rem;
+  justify-content: space-between;
+  border-radius: 5px;
+}
+.persona-card2 {
+  margin-top: 2rem;
+  background-color: #ff4f0d;
+  padding: 1rem;
+  border-radius: 5px;
+  width: 25rem;
+}
+.persona-card3 {
+  margin-top: 2rem;
+  background-color: #ff4f0d;
+  padding: 1rem;
+  border-radius: 5px;
+  width: 30rem;
+}
+.persona-card4 {
+  margin-top: 2rem;
+  background-color: #ff4f0d;
+  padding: 1rem;
+  border-radius: 5px;
+  width: 10rem;
+}
+
+/* heuristic */
+.heuristic-container img {
+  max-width: 60%;
+}
+.heuristic {
+  text-align: left;
+  margin-left: 15%;
+  margin-top: 10rem;
+}
+
+/* Feature Matrix */
+.feature-matrix img {
+  margin-top: 10rem;
+  max-width: 60%;
+}
+/* Brainstorm */
+.brainstorm-container img {
+  margin-top: 10rem;
+  max-width: 70%;
+}
+/* Taskflow */
+.initial-taskflow img {
+  margin-top: 10rem;
+  max-width: 70%;
+}
+
+/* User Research */
+
+ul {
+  padding: 2rem;
+}
+
+/* Task Flow */
+
+.taskflow-image {
+  max-width: 50%;
+}
+.taskflow-text {
+  line-height: 5rem;
+}
+.taskflow-item img {
+  max-width: 70%;
+}
+
+@media screen and (max-width: 75em) {
+  .taskflow .fourcolumntext h4 {
+    margin-right: 2rem;
+  }
+  .taskflow .threecolumntext h4 {
+    text-align: center;
+  }
+  .taskflow .threecolumntext img {
+    max-width: 100%;
+    margin-left: 1.5rem;
+  }
+}
+
+/* User Journey */
+
+.threecolumntext {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 15rem;
+  margin-inline: 15%;
+  text-align: left;
+  gap: 5rem;
+}
+.user-flow img {
+  margin-top: 15rem;
+  max-width: 60%;
+}
+
+@media screen and (max-width: 75em) {
+  .threecolumntext {
+    display: grid;
+    grid-template-columns: 1fr;
+    font-size: 1.25rem;
+  }
+  .threecolumntext h4 {
+    font-size: 1.25rem;
+  }
+  .persona-container h2 {
+    font-size: 1.75rem;
+    letter-spacing: 0;
+    max-width: 50%;
+  }
+}
+/* Lofi */
+.lofi h4 {
+  margin-top: 15rem;
+  text-align: left;
+  margin-left: 15%;
+}
+.lofi img {
+  max-width: 100%;
+}
+.twocolumn {
+  margin-top: 10rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 70%;
+  gap: 5rem;
+  text-align: left;
+  margin-left: 15%;
+}
+/* .onecolumntext {
+  display: grid;
+  gap:10rem;
+  text-align: left;
+  max-width: 70%;
+  margin-top: 5rem;
+  margin-left: 15%;
+
+} */
+
+.image-card {
+  letter-spacing: 0;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  max-width: 70%;
+}
+
+@media screen and (max-width: 75em) {
+  .hifi {
+    font-size: 1.25rem;
+    max-width: 80%;
+  }
+  .hifi .twocolumntext {
+    margin-left: 15%;
+    text-align: center;
+  }
+  .hifi .threecolumntext {
+    /* margin-left: 15rem; */
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 75em) {
+  .twocolumn {
+    display: grid;
+    grid-template-columns: 1fr;
+    font-size: 1.25rem;
+    margin-top: 5rem;
+  }
+  .lofi h4 {
+    margin-top: 5rem;
+    font-size: 1.25rem;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+}
+/* hifi */
+
+.caption {
+  margin-top: 10rem;
+  text-align: left;
+  margin-left: 15%;
+}
+.hifi img {
+  max-width: 20rem;
+}
+
+.mockup img {
+  margin-top: 10rem;
+  max-width: 80%;
+}
+
+/* Styletyile */
+
+.styletiles img {
+  margin-top: 10rem;
+  max-width: 80%;
+}
+
+/* Button */
+
+.heading-button {
+  color: #fff;
+  text-transform: none;
+  margin-top: 10rem;
+}
+.button {
+  background-color: #ff4f0d;
+  border: solid 2px #ff4f0d;
+  width: 8rem;
+  color: white;
+  padding: 1rem 3rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.5rem;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.button a {
+  text-decoration: none;
+  color: white;
+}
+
+@media screen and (max-width: 75em) {
+  .heading-button {
+    margin-top: 15rem;
+    padding: 2rem;
+  }
+  .button {
+    width: 10rem;
+    padding: 1.5rem 5rem;
+    display: inline-block;
+    font-size: 1.75rem;
+  }
+}
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 75em) {
+  .sidebar {
+    width: 100%;
+    /* height: auto; */
+    margin: 0;
+    padding: 0;
+  }
+  .sidebar a {
+    float: left;
+  }
+}

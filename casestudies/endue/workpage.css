@@ -1,0 +1,33 @@
+.wrapper2{
+    /* background-image: url(../../images/endue/background.png); */
+    background-color: #fff;
+    /* height:100%; */
+   max-width:100%;
+   background-size: cover;
+   z-index: -1;
+   margin-left: auto;
+   margin-right: auto;
+   color:#1D2939;
+   text-align: center;
+  }
+  .container {
+    max-width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+ 
+  }
+  
+@media screen and (max-width: 75em) {
+    .wrapper2 {
+      max-width: 100%;
+      overflow: hidden;
+      margin: 0;
+      padding: 0;
+   
+    }
+
+  }
+
+
+
+  

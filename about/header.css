@@ -1,0 +1,573 @@
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+  80% {
+    transform: translateX(1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+  80% {
+    transform: translateX(-1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+@keyframes moveInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+@keyframes fadeZoomIn {
+  0% {
+    opacity: 0.5;
+    transform: scale(0.95);
+  }
+  /* 50% {
+    opacity: 1;
+    transform: scale(0.975);
+  } */
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes fadeZoomOut {
+  100% {
+    opacity: 0;
+    transform: scale(0.75);
+  }
+  /* 50% {
+    opacity: 1;
+    transform: scale(0.975);
+  } */
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+/* Cover */
+.skills img {
+  max-width: 40%;
+}
+.text-block img {
+  width: 480px;
+  height: 700px;
+}
+.education .description {
+  padding-top: 10rem;
+}
+.education article {
+  padding-top: 2rem;
+}
+.experiences article {
+  padding-top: 1rem;
+}
+.text-block {
+  display: grid;
+  text-align: left;
+  gap: 5rem;
+  position: absolute;
+  top: 10%;
+left: 20%;
+  color: white;
+  max-width: 100%;
+  grid-template-columns: 1fr 1fr;
+}
+.text-block article {
+  line-height: 3.25rem;
+  font-size: 1.5rem;
+  letter-spacing: .1rem;
+
+}
+.on {
+  display: none;
+}
+.text-block img {
+  width: 520px;
+  height: 700px;
+}
+.image-slide {
+  animation-name: moveInLeft;
+  animation-duration: 2.5s;
+  animation-timing-function: ease-out;
+}
+
+@media screen and (max-width: 75em) {
+
+  .image-slide {
+    max-width: 100%;
+    margin-top: -15rem;
+    padding: 0;
+  }
+  .text-block {
+    grid-template-columns: 1fr;
+
+  }
+  .text-block h4 {
+    font-size: 1.5rem;
+  }
+
+  .text-block img {
+    width:240px;
+    height: 350px;
+    margin-top: 5rem;
+  }
+  .skills {
+    margin-top:3rem
+  }
+  .text-block article {
+    max-width: 80%;
+  }
+  .off {
+    display: none;
+  }
+  .on {
+    display:initial;
+  }
+  .about {
+    margin-top: 45rem;
+    max-width: 90%;
+  }
+  .education .description{
+    padding-top: 3rem;
+  }
+}
+
+/* Codi Image */
+.heading-primary {
+  color: #fff;
+  text-transform: none;
+  /* backface-visibility: hidden; */
+  display: inline-grid;
+  grid-template-columns: auto auto;
+  /* margin-bottom: 6rem; */
+}
+.heading-primary--main {
+  display: block;
+  font-size: 9rem;
+  font-weight: 800;
+  -webkit-text-stroke: 1px white;
+  -webkit-text-fill-color: #161616;
+  /* letter-spacing: 3.5rem; */
+  animation-name: moveInLeft;
+  animation-duration: 2.5s;
+  animation-timing-function: ease-out;
+  /*
+          animation-delay: 3s;
+          animation-iteration-count: 3;
+          */
+}
+
+.text-block .caption {
+  letter-spacing: 0.25rem;
+  line-height: 2;
+}
+
+h2 {
+  color: #ff4f0d;
+}
+.experiences h2 {
+  text-align: left;
+  margin-left: 15%;
+  margin-top: 5rem;
+}
+
+@media screen and (max-width: 75em) {
+  .textover {
+    margin-top: -5rem;
+    /* margin-top: 55rem; */
+    top: 0;
+    position: relative;
+  }
+  .experiences {
+    margin-top: -3rem;
+  }
+.about h2 {
+  font-size: 2.75rem;
+}
+  .textover figcaption {
+    font-size: 1.25rem;
+  }
+  .textover h1 {
+    letter-spacing: 0;
+    font-size: 2rem;
+  }
+  .textover h2 {
+    letter-spacing: 0;
+    font-size: 1.75rem;
+  }
+  .textover h4 {
+    letter-spacing: 0;
+    font-size: 1.25rem;
+  }
+  .heading-primary--main {
+    font-size: 6rem;
+  }
+}
+/* Concept */
+.concept-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  text-align: left;
+  margin-left: 15%;
+  margin-top: 55rem;
+}
+.concept-container img {
+  max-width: 100%;
+  margin-top: 10rem;
+}
+.concept-text {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 7rem;
+  max-width: 50rem;
+}
+@media screen and (max-width: 75em) {
+  .concept-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 70%;
+    font-size: 1rem;
+    margin-top: 5rem;
+  }
+  .concept-container img {
+    margin-top: 5rem;
+  }
+
+  .concept-container h2 {
+    letter-spacing: 0;
+    font-size: 1.75rem;
+  }
+  .concept-container h4 {
+    letter-spacing: 0;
+    font-size: 1.25rem;
+  }
+  .brand {
+    margin-top: -5rem;
+  }
+}
+/* Brand */
+.turnGreen {
+  color: #38fe13;
+}
+
+/* .concept-item2 {
+  grid-row: 2;
+ 
+}
+.concept-item3 {
+  grid-row: 3;
+}
+.concept-item4 {
+  grid-column: 2;
+  grid-row: 1;
+}
+.concept-item4 img {
+  margin-top: 10rem;
+  width: 60rem;
+} */
+
+/* Brand */
+.brand img {
+  margin-top: 15rem;
+  max-width: 70%;
+}
+
+/* Define Problem */
+
+.define-problem img {
+  margin-top: 15rem;
+  max-width: 60%;
+}
+
+.twocolumntext {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 100%;
+  text-align: left;
+  margin-left: 15%;
+}
+.twocolumntext h1 {
+  font-size: 5rem;
+}
+
+@media screen and (max-width: 75em) {
+  .twocolumntext {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 70%;
+    font-size: 1.25rem;
+    margin-top: 3rem;
+  }
+  .twocolumntext h1 {
+    font-size: 2rem;
+  }
+  .twocolumntext h4 {
+    font-size: 1.25rem;
+  }
+  .define-problem img {
+    margin-top: 7rem;
+    max-width: 70%;
+  }
+}
+
+/* Competitive */
+.image-split {
+  display: flex;
+  gap: 10rem;
+  margin-left: 15%;
+}
+.image-split img {
+  max-width: 30%;
+}
+/* User Research */
+@media screen and (max-width: 75em) {
+  .image-split {
+    display: grid;
+    grid-template: 1fr;
+    gap: 0;
+  }
+  .image-split img {
+    max-width: 80%;
+  }
+  .user-research {
+    margin-bottom: 5rem;
+  }
+  .caption {
+    margin-bottom: -7rem;
+  }
+}
+ul {
+  padding: 1rem;
+}
+/* Persona */
+.persona-container {
+  margin-top: 15%;
+}
+.persona-container figcaption {
+  text-align: left;
+  margin-left: 15%;
+  letter-spacing: 1.1rem;
+}
+
+.persona-item-section {
+  grid-column: 2 / span 3;
+}
+.persona-item-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10rem;
+  max-width: 100%;
+}
+
+.persona-item2 {
+  grid-column: 1 / span 4;
+}
+.persona-item3 {
+  grid-column: 1;
+  grid-row: 2;
+}
+.persona-item4 {
+  grid-column: 2;
+  grid-row: 2;
+}
+.persona-item5 {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+/* User Journey */
+.user-journey .caption {
+  margin-top: 5rem;
+}
+
+.threecolumntext {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 10rem;
+  margin-left: 15%;
+  text-align: left;
+  gap: 5rem;
+  padding-right: 5rem;
+}
+.user-flow img {
+  margin-top: 15rem;
+  max-width: 60%;
+}
+
+@media screen and (max-width: 75em) {
+  .threecolumntext {
+    display: grid;
+    grid-template-columns: 1fr;
+    font-size: 1.25rem;
+  }
+  .threecolumntext h4 {
+    font-size: 1.25rem;
+  }
+  .persona-container h2 {
+    font-size: 1.75rem;
+    letter-spacing: 0;
+    max-width: 50%;
+  }
+}
+
+/* Desktop */
+
+.desktop img {
+  margin-top: 5rem;
+  max-width: 100%;
+  /* grid-column: 1/span 2; */
+}
+
+@media screen and (max-width: 75em) {
+  .desktop {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+/* Sitemap */
+.sitemap img {
+  margin-top: 10rem;
+  max-width: 60%;
+}
+/* Design Strategy */
+.onecolumntext {
+  display: grid;
+  gap: 10rem;
+  text-align: left;
+  max-width: 70%;
+  margin-top: 5rem;
+  margin-left: 15%;
+}
+
+@media screen and (max-width: 75em) {
+  .onecolumntext {
+    font-size: 1.25rem;
+  }
+}
+
+/* Lofi */
+.lofi h4 {
+  margin-top: 15rem;
+  text-align: left;
+  margin-left: 15%;
+}
+.lofi img {
+  max-width: 100%;
+}
+.twocolumn {
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 100%;
+  justify-content: space-between;
+  text-align: left;
+  margin-left: 15%;
+}
+
+@media screen and (max-width: 75em) {
+  .twocolumn {
+    display: grid;
+    grid-template-columns: 1fr;
+    font-size: 1.25rem;
+    margin-top: 5rem;
+  }
+  .lofi h4 {
+    margin-top: 5rem;
+    font-size: 1.25rem;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+}
+/* hifi */
+.hifi h4 {
+  margin-top: 15rem;
+  text-align: left;
+  margin-left: 15%;
+}
+.hifi img {
+  max-width: 100%;
+}
+
+/* Styletyile */
+.styletile {
+  margin-bottom: 15rem;
+}
+
+/* Button */
+
+.heading-button {
+  color: #fff;
+  text-transform: none;
+  margin-top: 10rem;
+}
+.button {
+  background-color: rgba(0, 0, 0, 0.1);
+  border: solid 2px #38fe13;
+  width: 8rem;
+  color: white;
+  padding: 1rem 3rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.5rem;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.button a {
+  text-decoration: none;
+  color: white;
+}
+
+@media screen and (max-width: 75em) {
+  .heading-button {
+    margin-top: 15rem;
+    padding: 2rem;
+  }
+  .button {
+    width: 10rem;
+    padding: 1.5rem 5rem;
+    display: inline-block;
+    font-size: 1.75rem;
+  }
+}
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 75em) {
+  .sidebar {
+    width: 100%;
+    /* height: auto; */
+    margin: 0;
+    padding: 0;
+  }
+  .sidebar a {
+    float: left;
+  }
+}

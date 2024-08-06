@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/navigation.css" />
+    <link rel="stylesheet" href="./styles/header.css" />
+    <link rel="stylesheet" href="./styles/button.css" />
+    <link rel="stylesheet" href="./styles/tab.css" />
+    <link rel="stylesheet" href="./styles/homepage.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="./scripts/scripts.js"></script>
+    <script type="text/javascript" src="./scripts/scroll.js"></script>
+    <title>Toto Portfolio</title>
+  </head>
+  <body class="wrapper">
+    <!-- navigation -->
+    <!-- The sidebar -->
+    <div class="container">
+      <!-- <div id="mySidenav" class="sidebar">
+    
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          >&times;</a
+        >
+        <a href="./index.html">     <img
+          onclick="openNav()"
+          class="logo-image"
+          src="./images/homepage/Logo.jpg"
+          alt=""
+        /></a>
+   
+     
+        <a class="active" href="./index.html">Home</a>
+        <a href="./works/codi/index.html">Works</a>
+        <a href="./about/index.html">About</a>
+
+    </div> -->
+      <header>
+        <div id="brand"><a href="../../index.html">Nhien Dang</a></div>
+        <nav>
+          <ul>
+            <li><a class="active" href="../../index.html">Home</a></li>
+            <li><a href="./works/endue/index.html">Works</a></li>
+            <li><a href="./about/index.html">About</a></li>
+          </ul>
+          <div id="indicator"></div>
+        </nav>
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+          <ul class="mobile-menu">
+            <li><a href="../../index.html">Home</a></li>
+            <li><a class="active" href="./works/endue/index.html">Works</a></li>
+            <li><a href="./about/index.html">About</a></li>
+          </ul>
+        </div>
+      </header>
+
+      <div class="grid-container">
+        <div class="animation-element slide-up">
+          <img src="./images/homepage/myself.png" alt="myself" />
+        </div>
+        <!-- header -->
+        <div class="header2">
+          <div class="onegrid">
+            <div class="header__text-box">
+              <h1 class="heading-primary">
+                <span class="heading-primary--main">aka</span>
+                <span class="heading-primary--main4">Toto</span>
+              </h1>
+            </div>
+            <div class="header__text-box">
+              <h1 class="heading-primary">
+                <span class="heading-primary--main">aka</span>
+                <span class="heading-primary--main2">Toto</span>
+              </h1>
+            </div>
+            <div class="header__text-box2">
+              <div class="sub_textbox">
+                <h4 class="heading-primary--sub3">
+                  Just an Architect - turned - Product Designer
+                </h4>
+              </div>
+            </div>
+            <div class="header__text-box2">
+              <div class="sub_textbox">
+                <h4 class="heading-primary--sub">
+                  Just an Architect - turned - Product Designer
+                </h4>
+              </div>
+            </div>
+            <div class="header__text-box3">
+              <div class="sub_textbox2">
+                <p>
+                  For more immersive experience
+                  <span>
+                    <button class="heading-button button">
+                      <a href="./works/endue/index.html">PROJECTS</a>
+                    </button></span
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project -->
+      <div class="projectContainer">
+        <div class="banner-container2 animation-element slide-up">
+          <div class="banner-wrapper">
+            <div class="banner-image1"></div>
+            <h1 class="">Endue</h1>
+            <p>
+              Designing for healthcare - my journey at Endue creating an MVP for
+              infusion centers.
+            </p>
+            <h6>Endue Software | Professional Experience | Web Application</h6>
+          </div>
+          <div class="button-wrapper">
+            <button class="btn outline1">
+              <a href="./casestudies/endue/index.html">EXPLORE</a>
+            </button>
+          </div>
+        </div>
+        <div class="threecolumns">
+          <div class="banner-container animation-element slide-up">
+            <div class="banner-wrapper">
+              <div class="banner-image"></div>
+              <h1 class="turnG">Codi</h1>
+              <p>An application for My-Codi sport coaching device.</p>
+              <h6>Figma | Illustrator | Photoshop | Mobile App</h6>
+            </div>
+            <div class="button-wrapper">
+              <button class="btn outline">
+                <a href="./casestudies/endue/index.html">GET READY</a>
+              </button>
+            </div>
+          </div>
+          <div class="banner-container animation-element slide-up">
+            <div class="banner-wrapper">
+              <div class="banner-image2"></div>
+              <h1 class="turnP">Momento</h1>
+              <p>Mobile app for gift as experience, hosted by the locals.</p>
+              <h6>Figma | Illustrator | Photoshop | Mobile App</h6>
+            </div>
+            <div class="button-wrapper">
+              <button class="btn outline2">
+                <a href="./casestudies/momento/index.html"
+                  >SEARCH YOUR MOMENT</a
+                >
+              </button>
+            </div>
+          </div>
+          <div class="banner-container animation-element slide-up">
+            <div class="banner-wrapper">
+              <div class="banner-image3"></div>
+              <h1 class="turnO">Trasheroes</h1>
+              <p>The Power of One.</p>
+              <h6>
+                Figma | Illustrator | Photoshop | After Effect | Mobile App
+              </h6>
+            </div>
+            <div class="button-wrapper">
+              <button class="btn outline3">
+                <a href="./casestudies/trasheroes/index.html">BE A HERO</a>
+              </button>
+            </div>
+          </div>
+          <div class="banner-container animation-element slide-up">
+            <div class="banner-wrapper">
+              <div class="banner-image4"></div>
+              <h1 class="turnR">Bauhaus.NFTs</h1>
+              <p>The marketplace for Bauhaus NFTs.</p>
+              <h6>Php | Javascript | Css | jQuery | Web App</h6>
+            </div>
+            <div class="button-wrapper">
+              <button class="btn outline4">
+                <a href="./casestudies/bauhaus/index.html">"FREE" TOKEN HERE</a>
+              </button>
+            </div>
+          </div>
+          <div class="banner-container animation-element slide-up">
+            <div class="banner-wrapper">
+              <div class="banner-image5"></div>
+              <h1 class="turnY">pawfectpaw</h1>
+              <p>Learn First Adopt Later.</p>
+              <h6>Figma | Illustrator | Photoshop | Kiosk</h6>
+            </div>
+            <div class="button-wrapper">
+              <button class="btn outline5">
+                <a href="./casestudies/pawfectpaw/index.html">WOOF WOOF</a>
+              </button>
+            </div>
+          </div>
+          <div class="banner-container animation-element slide-up">
+            <div class="banner-wrapper">
+              <div class="banner-image6"></div>
+              <h1 class="turnB">United Dumpling</h1>
+              <p>In Dumpling We Trust.</p>
+              <h6>Figma | Illustrator | Photoshop</h6>
+            </div>
+            <div class="button-wrapper">
+              <button class="btn outline6">
+                <a href="./casestudies/uniteddumplings/index.html"
+                  >DUMPLING TIME</a
+                >
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="static">
+        &copy;
+        <span id="copyright">
+          <script>
+            document
+              .getElementById("copyright")
+              .appendChild(document.createTextNode(new Date().getFullYear()));
+          </script>
+        </span>
+        Nhien Dang
+      </div>
+    </footer>
+    <!-- JS -->
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "0";
+        document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginRight = "250px";
+        document.body.style.backgroundColor = "white";
+      }
+    </script>
+  </body>
+</html>
+
+<!-- 
+<div class="grid-container">
+        
+  header
+  <header class="header">
+    <div class="onegrid">
+    <div class="header__text-box">
+      <h1 class="heading-primary">
+          <span class="heading-primary--main">aka</span>
+          <span class="heading-primary--main4">Toto</span>
+          
+      </h1>
+    </div>
+    <div class="header__text-box">
+      <h1 class="heading-primary">
+          <span class="heading-primary--main">aka</span>
+          <span class="heading-primary--main2">Toto</span>
+      </h1>
+    </div>
+    <div class="header__text-box ">
+      <h1 class="heading-button">
+         <button class="button"><a href="./works/codi/index.html">My Projects</a></button>
+      </h1>
+        </div>
+  </div>
+  
+    Button
+ 
+        Pagination
+     
+ 
+        <div class="header__text-box">
+          <div class="sub_textbox">
+            <h4 class="heading-primary--sub3">                                                      Just an Architect - turned - Product Designer  </h4> 
+       
+           </div>
+           </div>
+          <div class="header__text-box">
+          <div class="sub_textbox">
+            <h4 class="heading-primary--sub">                                                       Just an Architect - turned - Product Designer   </h4> 
+          
+           </div>
+           </div>
+
+  </header>
+
+
+</div> -->

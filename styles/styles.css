@@ -1,0 +1,72 @@
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  /* box-sizing: border-box; */
+  font-size: 75%; 
+  overflow-x: hidden;
+ max-width: 100%;
+ text-align: center;
+letter-spacing: 0.1rem;
+}
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 50%; 
+      }
+ 
+    }
+
+body {
+  transition: background-color .5s;
+  font-family: "Neue Haas Grotesk Display Pro", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 1.75;
+  /* margin: 0 auto; */
+
+  text-align: center;
+  color: white;
+
+}
+h1{
+  font-size: 5rem;
+}
+h2 {
+  font-size: 3.5rem;
+}
+h4 {
+  font-size: 2rem;
+}
+.wrapper {
+  max-width: 100%; /* 2 */
+}
+@media screen and (min-width: 73em) {
+  body {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+
+  }
+}
+@media screen and (min-width: 1600px) {
+  body {
+    max-width: 100%;
+  }
+}
+@media screen and (min-width: 1920px) {
+  body {
+
+    max-width: 100%;
+  }
+}
+
+  @media screen and (min-width: 3840px) {
+      body {
+        max-width: 100%;
+      }
+  }

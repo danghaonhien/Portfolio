@@ -1,0 +1,28 @@
+
+  .wrapper{
+    background-color: #282828;
+    /* height:100%; */
+   max-width:100%;
+   background-size: cover;
+   z-index: -1;
+   margin: auto;
+  }
+
+  .wrapper2 {
+    max-width: 85%;
+    margin: auto;
+  }
+@media screen and (max-width: 75em) {
+    .wrapper2 {
+      max-width: 100%;
+      overflow: hidden;
+  
+      padding: 0;
+   
+    }
+
+  }
+
+
+
+  

@@ -1,0 +1,40 @@
+
+  .wrapper{
+    background-image: url(../../images/pawfectpaw/cover.png);
+    max-width: 100%;
+    background-size: cover;
+    background-position: top;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-color: black;
+  }
+  .grid-container {
+    display: inline-grid;
+      grid-template-columns: 0rem 120rem;
+    }
+
+@media screen and (max-width: 75em) {
+    .codi-container {
+      max-width: 100%;
+      overflow: hidden;
+      max-height: 100vh;
+    }
+  }
+
+  @media screen and (min-width: 1400px) {
+    .codi-container {
+      max-width: 100%;
+    }
+  }
+  @media screen and (min-width: 1600px) {
+    .codi-container {
+      max-width: 100%;
+    }
+  }
+  @media screen and (min-width: 1900px) {
+    .codi-container {
+      max-width: 100%;
+    }
+  }
+
+  

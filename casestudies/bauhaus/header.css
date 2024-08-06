@@ -1,0 +1,497 @@
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+  80% {
+    transform: translateX(1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+  80% {
+    transform: translateX(-1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+@keyframes moveInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+@keyframes fadeZoomIn {
+  0% {
+    opacity: 0.5;
+    transform: scale(0.95);
+  }
+  /* 50% {
+    opacity: 1;
+    transform: scale(0.975);
+  } */
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+/* Cover */
+.cover-container img {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.text-block {
+  display: grid;
+  text-align: left;
+  gap: 5rem;
+  position: absolute;
+  top: 25%;
+ left: 15%;
+  color: white;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  max-width: 30%;
+}
+.text-block article {
+  line-height: 4rem;
+  font-size: 1.5rem;
+}
+.image-slide {
+  animation-name: moveInLeft;
+  animation-duration: 2.5s;
+  animation-timing-function: ease-out;
+}
+
+@media screen and (max-width: 75em) {
+  .logo {
+    font-size: 4rem;
+   
+  }
+  .image-slide {
+    max-width: 100%;
+    margin-top: -18rem;
+    padding: 0;
+    font-size: 4rem;
+  }
+  .text-block article {
+    max-width: 80%;
+  }
+  .text-block {
+    max-width: 60%;
+    margin-top: 10rem;
+    padding: 0;
+  }.text-block h2 {
+    font-size: 1.75rem;
+  }
+  .cover-container img {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .cover-container{
+   margin-bottom: 50rem;
+  }
+}
+
+
+
+/* Codi Image */
+
+  
+  
+  .textover img {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  
+  }
+  .textover {
+  align-items: center;
+  justify-content: center;
+  
+  }
+  .text {
+    margin-top: 10rem;
+    margin-left: 15%;
+    text-align: left;
+    max-width: 70%;
+  }
+  .caption {
+    margin-left: 15%;
+    text-align: left;
+    max-width: 80%;
+  }
+  
+  .textover figcaption {
+  letter-spacing: 1.1rem;
+    max-width: 80%;
+  margin-top: 15rem;
+  margin-left: 15%;
+    text-align: left;
+  }
+  
+  @media screen and (max-width: 75em) {
+    .textover {
+      /* margin-top: 55rem; */
+  
+    top: 0;
+    /* position: relative; */
+  
+    }
+    .textover figcaption  {
+      font-size: 1.25rem;
+      margin-top: 5rem;
+  
+    }
+  .textover h1 {
+    letter-spacing: 0;
+    font-size: 2rem;
+  }
+  .textover h2 {
+    letter-spacing: 0;
+    font-size: 1.75rem;
+  }
+  .textover h4 {
+    margin-top: -5rem;
+    letter-spacing: 0;
+    font-size: 1.25rem;
+  }
+  .text {
+    margin-top: 7rem;
+    max-width: 100%;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+
+  }
+/* Concept */
+
+
+
+
+.turnRed {
+  color: #BB1C00;
+}
+.turnYellow {
+  color: #D0B541;
+}
+.turnBlue {
+  color: #0A74A4;
+}
+.spanBlue {
+  background-color: #0A74A4;
+  padding: 2rem;
+}
+.spanYellow {
+  background-color: #D0B541;
+  padding: 2rem;
+}
+.spanRed {
+  background-color: #B7645B;
+  padding: 2rem;
+}
+@media screen and (max-width: 75em) {
+  .spanBlue {
+    background-color: #0A74A4;
+    padding: .5rem;
+  }
+  .spanYellow {
+    background-color: #D0B54.5;
+    padding: .5rem;
+  }
+  .spanRed {
+    background-color: #B7645B;
+    padding: .5rem;
+  }
+}
+
+/* Concept */
+.concept-container {
+  max-width: 100%;
+
+  
+}
+.concept-container img {
+  max-width: 80%;
+  margin-top: 10rem;
+
+}
+
+@media screen and (max-width: 75em) {
+  .concept-container {
+   max-width:90%;
+   font-size: 1.25rem;
+
+  }
+.concept-container img {
+  margin-top:5rem;
+  max-width: 100%%;
+  margin-left: 10%;
+
+}
+
+  .concept-container h2 {
+  letter-spacing: 0;
+  font-size: 1.75rem;
+}
+  .concept-container h4 {
+  letter-spacing: 0;
+  font-size: 1.25rem;
+}
+
+
+}
+/* Design process */
+ .card-container {
+  display: grid;
+grid-template-columns: repeat(5, 1fr);
+max-width: 70%;
+margin-left: 15%;
+gap: 5rem;
+ }
+.card {
+  background-color: rgba(0, 0, 0, 0.1);
+  max-width: 20rem;
+  min-height: 15rem;
+  text-align: left;
+  padding: 2rem;
+
+  margin-top: 10rem;
+}
+
+
+
+
+/* empathy */
+
+.empathy {
+  text-align: left;
+  margin-left: 15%;
+  margin-top: 10rem;
+}
+
+.twocolumntext {
+margin-top: 10rem;
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 15rem;
+text-align: left;
+margin-left: 15%;
+/* grid-column-gap: 15rem; */
+}
+
+/* Persona */
+.persona-text {
+  line-height: 3.8rem;
+}
+.persona-card {
+  margin-top: 2rem;
+  display: flex;
+  background-color: #BB1C00;
+  padding: 1rem;
+  justify-content: space-between;
+  border-radius: 5px;
+}
+.persona-card2 {
+  margin-top: 2rem;
+  background-color: #BB1C00;
+  padding: 1rem;
+  border-radius: 5px;
+  width: 25rem;
+}
+.persona-card3 {
+  margin-top: 2rem;
+  background-color: #BB1C00;
+  padding: 1rem;
+  border-radius: 5px;
+  width: 30rem;
+}
+.persona-card4 {
+  margin-top: 2rem;
+  background-color: #BB1C00;
+  padding: 1rem;
+  border-radius: 5px;
+  width: 10rem;
+}
+
+/* heuristic */
+.heuristic-container img {
+  max-width: 60%;
+}
+.heuristic {
+  text-align: left;
+  margin-left: 15%;
+  margin-top: 10rem;
+}
+
+/* Feature Matrix */
+.feature-matrix img {
+  margin-top: 10rem;
+max-width: 60%;
+}
+/* Brainstorm */
+.brainstorm-container img {
+  margin-top: 10rem;
+  max-width: 70%;
+}
+/* Taskflow */
+.initial-taskflow img {
+  margin-top: 10rem;
+  max-width: 70%;
+}
+
+/* User Research */
+
+ul {
+  padding: 2rem;
+}
+
+
+/* Task Flow */
+.taskflow-image {
+  max-width: 50%;
+}
+.taskflow-text {
+  line-height: 5rem;
+}
+.taskflow-item img {
+  max-width: 70%;
+}
+.threecolumntext p {
+  margin-left: 2rem;
+}
+/* User Journey */
+
+.threecolumntext {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr ;
+  margin-top: 15rem;
+  margin-inline: 15%;
+  text-align: left;
+  gap:5rem;
+}
+.user-flow img {
+  margin-top: 15rem;
+  max-width: 60%;
+}
+
+/* Lofi */
+.lofi h4{
+  margin-top: 15rem;
+  text-align: left;
+  margin-left: 15%;
+}
+.lofi img {
+  max-width: 100%;
+}
+.twocolumn {
+  margin-top: 10rem;
+display: grid;
+grid-template-columns: 1fr 1fr;
+max-width: 70%;
+gap: 5rem;
+text-align: left;
+margin-left: 15%;
+}
+/* hifi */
+
+
+.hifi img {
+  max-width: 20rem;
+}
+.hifi h4 {
+  margin-left: 15%;
+  margin-top: 10rem;
+  text-align: left;
+}
+
+.mockup img {
+margin-top: 10rem;
+max-width: 80%;
+}
+
+/* Styletyile */
+
+.styletiles img {
+  margin-top: 10rem;
+  max-width: 80%;
+  }
+  
+
+/* Button */
+.buttons {
+  display: flex;
+  max-width: 80%;
+}
+.heading-button {
+  color: #fff;
+  text-transform: none;
+  margin-top: 10rem;
+}
+
+.button {
+  background-color: rgb(0,0,0,0.8);
+  /* border: solid 2px #BB1C00; */
+  width: 8rem;
+  color: white;
+  padding: 1rem 3rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.5rem;
+  border-radius: 30px;
+  cursor: pointer;
+  margin: 1rem;
+}
+.button a {
+  text-decoration: none;
+  color: white;
+}
+
+@media screen and (max-width: 75em) {
+  .heading-button {
+    margin-top: 15rem;
+
+  }
+  .button {
+    white-space: nowrap;
+    padding: 1.5rem 6rem;
+    display: inline-block;
+    font-size: 1.75rem;
+    
+  }
+}
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 75em) {
+  .sidebar {
+    width: 100%;
+    /* height: auto; */
+    margin: 0;
+    padding: 0;
+
+  }
+  .sidebar a {float: left;}
+}
